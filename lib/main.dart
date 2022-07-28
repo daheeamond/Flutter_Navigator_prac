@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp( MaterialApp(
     title: 'Navigation',
     home: FirstRoute(),
   ));
@@ -12,11 +12,11 @@ class FirstRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('First Route'),
+        title: Text('Page 1'),
       ),
       body: Center(
         child: ElevatedButton(
-          child: Text("open Route"),
+          child: Text("open page2"),
           onPressed: () {
             Navigator.push(
               context,
@@ -33,7 +33,7 @@ class SecondRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Second Route'),
+        title: Text('page 2'),
       ),
       body: Center(
         child: ElevatedButton(
